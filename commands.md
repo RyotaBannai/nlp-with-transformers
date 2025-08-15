@@ -9,3 +9,6 @@ docker run --name playground -dit --gpus all py39-playground：コンテナをba
 docker exec -it playground bash：バックグラウンドで起動したコンテナに入る
 docker stop playground：コンテナ停止
 docker rm playground：コンテナ削除
+
+依存pacakge：
+uv pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu124
