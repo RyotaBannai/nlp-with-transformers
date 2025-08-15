@@ -1,0 +1,22 @@
+[project]
+name = "dev"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "bertviz>=1.4.1",
+    "datasets>=4.0.0",
+    "matplotlib>=3.9.4",
+    "nlpaug>=1.1.11",
+    "nltk>=3.9.1",
+    "pip>=25.2",
+    "psutil>=7.0.0",
+    "py7zr>=1.0.0",
+    "rouge-score>=0.1.2",
+    "sacrebleu>=2.5.1",
+    "scikit-multilearn>=0.2.0",
+    "seqeval>=1.2.2",
+    "transformers[optuna,sentencepiece,sklearn,tf,torch,vision]==4.16.2",
+    "umap-learn>=0.5.9.post2",
+]

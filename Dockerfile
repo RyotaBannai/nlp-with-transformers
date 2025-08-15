@@ -11,9 +11,13 @@ RUN apt-get update && apt-get install -y \
     python3.9-distutils \
     python3-pip \
     git \
+    openssh-server \
     && rm -rf /var/lib/apt/lists/*
 
 # デフォルトの Python を Python 3.9 に変更
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
 
-CMD ["bash"]
+RUN mkdir /var/run/sshd
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
