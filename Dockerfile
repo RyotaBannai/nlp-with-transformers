@@ -12,8 +12,11 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git \
     openssh-server \
+    curl \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
+RUN curl -Ls https://github.com/astral-sh/uv/releases/latest/download/uv-installer.sh | bash
 # デフォルトの Python を Python 3.9 に変更
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
 
