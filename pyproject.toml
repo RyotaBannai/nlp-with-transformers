@@ -5,22 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "bertviz>=1.4.1",
-    "datasets==3.6.0",
-    "elasticsearch-haystack>=3.1.0",
-    "future>=1.0.0",
-    "haystack-ai[elasticsearch]>=2.17.1",
     "ipywidgets>=8.1.7",
     "matplotlib>=3.9.4",
-    "nlpaug>=1.1.11",
-    "nltk>=3.9.1",
-    "pip>=25.2",
-    "psutil>=7.0.0",
-    "py7zr>=1.0.0",
-    "rouge-score>=0.1.2",
-    "sacrebleu>=2.5.1",
-    "scikit-multilearn>=0.2.0",
-    "seqeval>=1.2.2",
-    "transformers>=4.16.2",
-    "umap-learn>=0.5.9.post2",
+    "optuna>=4.5.0",
+    "scikit-learn>=1.6.1",
 ]
