@@ -12,6 +12,7 @@ dependencies = [
     "nlpaug==1.1.7",
     "nltk==3.9b1",
     "optuna>=4.5.0",
+    "psutil>=7.0.0",
     "py7zr>=1.0.0",
     "sacremoses>=0.1.1",
     "scikit-learn>=1.6.1",
